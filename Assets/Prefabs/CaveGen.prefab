@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5265884188091132903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5265884188091132905}
+  - component: {fileID: 5265884188091132902}
+  m_Layer: 0
+  m_Name: CaveGen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5265884188091132905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265884188091132903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7, y: 0.4, z: -1400.1699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5265884188091132902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265884188091132903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55370d20004274f98935e2f7a159a357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 80
+  height: 80
+  smoothCycles: 5
+  randFillPercent: 41
+  threshold: 3
+  BlackGranite: {fileID: 3945028733716338251, guid: 8187b9bbaa530481d99af4c37ca03df2,
+    type: 3}
+  GoldGraniteOre: {fileID: 639371429235516379, guid: bbf725644fce34a869db3ff7fa0b5aee,
+    type: 3}
+  MythryliumGraniteOre: {fileID: 6353326370441632727, guid: 3d96baecd68aa499a9e385107a11b3b1,
+    type: 3}
+  CaveChunk: {fileID: 0}
+  chanceGold: 12
+  chanceMythrilium: 3
