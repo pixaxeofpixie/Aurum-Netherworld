@@ -114,9 +114,7 @@ public class CaveChunkGen : MonoBehaviour
             {
                 if (cavePoints[x,y] == 1)
                 {
-                    GameObject CaveChunk = Instantiate(BlackGranite, new Vector3(), Quaternion.identity);
-                    CaveChunk.transform.parent = this.transform;
-                    CaveChunk.transform.localPosition = new Vector3(0f, 0f, 0f);
+                    Instantiate(BlackGranite, new Vector3(), Quaternion.identity);
                 }
             }
         }

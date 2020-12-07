@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3520866214747949864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5930926383646455354}
+  - component: {fileID: 845859956995159026}
+  m_Layer: 0
+  m_Name: JungleChunk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5930926383646455354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520866214747949864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.2371354, y: 56.816032, z: -88.77831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &845859956995159026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520866214747949864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c56296a78314196bd275a2838eb6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jungleGrass: {fileID: 6153675457680995875, guid: b83cef829c8ed4cca81418a7dd9d3d23,
+    type: 3}
+  jungleStone: {fileID: 3406960576605322434, guid: fde980bacec5f46d980231bf443fef27,
+    type: 3}
+  jungleDirt: {fileID: 6376564254992983931, guid: f0c112921da7e4e19a6876d8058cef2e,
+    type: 3}
+  pereniall: {fileID: 6629068269818338115, guid: d152c8341ce974700927849e00439464,
+    type: 3}
+  width: 80
+  heightMultiplier: 12
+  heightAddition: 10
+  smoothness: 8
+  seed: 0
+  chancePereniall: 15
