@@ -1,8 +1,8 @@
 # Aurum:Netherworld
 
-# Open-source 2D sandbox game inspired by Terraria:Otherworld.
+# Open-source 2D sandbox game.
  
- **Version-0.1 pre-aplha**
+ **Version-0.3 "Jungles" pre-aplha**
  
  ***Made with Unity and C# language.***
  
