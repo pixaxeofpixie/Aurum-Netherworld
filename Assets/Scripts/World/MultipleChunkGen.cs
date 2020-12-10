@@ -7,10 +7,13 @@ public class MultipleChunkGen : MonoBehaviour
 
     public GameObject Сhunk;
     public GameObject jungleСhunk;
-    int chunkWidth;
-    int jungleChunkWidth;
+    public GameObject distortedChunk;
+    public int chunkWidth;
+    public int jungleChunkWidth;
+    public int distortedChunkWidth;
     public int numChunks;
     public int jungleNumChunks;
+    public int distortedChunkNum;
     float seed;
 
     //start the generation function,create seed and get width of chunk
@@ -19,7 +22,8 @@ public class MultipleChunkGen : MonoBehaviour
     {
         chunkWidth = Сhunk.GetComponent<CrimsonChunkGen>().width;
         jungleChunkWidth = jungleСhunk.GetComponent<JungleChunkGen>().width;
-        seed = Random.Range(-100000f, 100000f);
+        distortedChunkWidth = distortedChunk.GetComponent<DistortedChunk>().width;
+        seed = Random.Range(-10000f, 10000f);
         Generate();
     }
 
@@ -39,6 +43,12 @@ public class MultipleChunkGen : MonoBehaviour
             GameObject newJungleChunk = Instantiate(jungleСhunk, new Vector3(lastX + jungleChunkWidth, 0f), Quaternion.identity) as GameObject;
             newJungleChunk.GetComponent<JungleChunkGen>().seed = seed; //import jungle chunk parametres from script
             lastX += jungleChunkWidth;
+        }
+        for (int i = 0; i < distortedChunkNum; i++)
+        {
+            GameObject newDistortedChunk = Instantiate(distortedChunk, new Vector3(lastX + distortedChunkWidth, 0f), Quaternion.identity) as GameObject;
+            newDistortedChunk.GetComponent<DistortedChunk>().seed = seed; //import jungle chunk parametres from script
+            lastX += distortedChunkWidth;
         }
     }
 }

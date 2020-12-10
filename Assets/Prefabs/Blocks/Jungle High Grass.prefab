@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4611570133666479821}
   - component: {fileID: 2000036263466547936}
-  - component: {fileID: 6326676864423375244}
   - component: {fileID: 2612753260033800501}
-  - component: {fileID: 3574300375756087738}
+  - component: {fileID: -1356739726468379783}
   m_Layer: 0
   m_Name: Jungle High Grass
   m_TagString: Untagged
@@ -28,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345784189244121266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,7 +84,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6326676864423375244
+--- !u!114 &2612753260033800501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345784189244121266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181a89958cdc44ee98d274f30411fb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileType: 8
+--- !u!61 &-1356739726468379783
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +107,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -111,36 +123,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2612753260033800501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345784189244121266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181a89958cdc44ee98d274f30411fb56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tileType: 4
---- !u!114 &3574300375756087738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345784189244121266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88cec7dcc06784d9db1da13c9e7e1c3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Number: 0
-  CrimsonGrass: {fileID: 0}
-  HighGrass: {fileID: 0}
-  Tree1: {fileID: 3672449675587291189, guid: 088822813083a4ff8b88f142bb31f170, type: 3}
-  Boulder: {fileID: 0}
-  jungleGrass: {fileID: 0}
-  jungleTree: {fileID: 0}
-  jungleHighGrass: {fileID: 0}

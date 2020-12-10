@@ -4953,5 +4953,13 @@ MonoBehaviour:
   CrimsonGrass: {fileID: 2058595557324077216}
   HighGrass: {fileID: 4321737414378422411, guid: 22c0ca3014585491ca642e7590e38685,
     type: 3}
-  Tree1: {fileID: 6582091729158060696, guid: c04a3a1154c0a4305912e4eca7234316, type: 3}
+  CrimsonTree: {fileID: 6582091729158060696, guid: c04a3a1154c0a4305912e4eca7234316,
+    type: 3}
   Boulder: {fileID: 1212955822697302905, guid: 63ebf188f56874376abc51ec489b7ec9, type: 3}
+  jungleGrass: {fileID: 0}
+  jungleTree: {fileID: 0}
+  jungleHighGrass: {fileID: 0}
+  distortedTree: {fileID: 0}
+  distortedGrass: {fileID: 0}
+  distortedHighGrass: {fileID: 0}
+  distortedBoulder: {fileID: 0}

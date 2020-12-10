@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181a89958cdc44ee98d274f30411fb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileType: 4
+  tileType: 7

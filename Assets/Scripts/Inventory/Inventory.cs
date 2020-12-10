@@ -5,21 +5,23 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public Text inventoryText, selectionText;
+    public Text inventoryText, inventoryText2, inventoryText3, selectionText;
 
     int selectedTile;
 
-    int[] counts = new int[7];
+    int[] counts = new int[19];
 
-    string[] names = new string[] { "Dirt", "Grass", "Granite", "Aurichalcum", "Mythrylium", "Wood", "Leaf" };
+    string[] names = new string[] { "Dirt", "Grass", "Granite", "Aurichalcum", "Mythrylium", "Wood", "Leaf", "JungleLeaf", "JungleLowGrass", "JungleDirt", "JungleTree", "Pereniall", "JungleStone", "DistortedLowGrass", "DistortedTree", "DistortedLeaf", "DistortedDirt", "Basalt", "DistortedOre" };
 
-    public GameObject[] tiles = new GameObject[7];
- 
+    public GameObject[] tiles = new GameObject[19];
+
     void Update()
     {
-        inventoryText.text = "Crimson Dirt: " + counts [0] + "\nCrimson Grass: " + counts [1] + "\nGranite: " + counts [2] + "\nAurichalcum: " + counts [3] + "\nMythrylium Ore: " + counts [4] + "\nWood: " + counts[5] + "\nLeaf: " + counts[6];
+        inventoryText.text = " " + counts[0] + "\n " + counts[1] + "\n " + counts[2] + "\n " + counts[3] + "\n " + counts[4] + "\n " + counts[5] + "\n " + counts[6];
+        inventoryText2.text = " " + counts[7] + "\n " + counts[8] + "\n " + counts[9] + "\n " + counts[10] + "\n " + counts[11] + "\n " + counts[12] + "\n " + counts[13];
+        inventoryText3.text = " " + counts[14] + "\n " + counts[15] + "\n " + counts[16] + "\n " + counts[17] + "\n " + counts[18];
 
-        if(selectedTile < 0)
+        if (selectedTile < 0)
         {
             selectedTile = counts.Length - 1;
         }
@@ -34,7 +36,7 @@ public class Inventory : MonoBehaviour
             selectedTile--;
         }
 
-        selectionText.text = "Selected Tile is " + names[selectedTile];
+        selectionText.text = "Selected Tile Is " + names[selectedTile];
 
         if (Input.GetMouseButton(1))
         {
