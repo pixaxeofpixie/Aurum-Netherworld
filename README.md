@@ -2,7 +2,7 @@
 
 ***Open-source 2D sandbox game.***
  
- **Version-0.3 "Jungles" pre-aplha**
+ **Version-0.4 "Distortion" aplha**
  
  **Code Editor-Visual Studio.**
  
